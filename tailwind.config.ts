@@ -21,6 +21,9 @@ const config = {
       colors: {
         milkyBg: "#FFEBD8",
         greenBg: "#0E231C",
+        liteGreen: "#67CA2F",
+        liteBrown: "#D99343",
+        liteBlack: "#0A120F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

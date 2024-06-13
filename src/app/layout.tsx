@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen overflow-x-hidden", inter.className)}>{children}</body>
+      <body className={cn("w-full min-h-screen overflow-x-hidden bg-milkyBg", inter.className)}>
+        {children}
+      </body>
     </html>
   );
 }

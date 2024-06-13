@@ -9,9 +9,9 @@ type MaxWrapperTypes = {
 
 const MaxWrapper: FC<MaxWrapperTypes> = ({ children, className }) => {
   return (
-    <div className={cn("w-full mx-auto max-w-[1368px] px-4", className)}>
+    <section className={cn("w-full mx-auto max-w-[1368px] md:px-4 px-1", className)}>
       {children}
-    </div>
+    </section>
   );
 };
 
