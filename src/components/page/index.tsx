@@ -5,6 +5,7 @@ import Header from "../shared/Header"
 import About from "../about"
 import MobileNav from "../shared/MobileNav"
 import Banner from "../banner/Banner"
+import Prize from "../prize"
 
 const Index = () => {
     return (
@@ -18,6 +19,9 @@ const Index = () => {
                 <About />
             </Element>
             <Banner />
+            <Element name="prize">
+                <Prize />
+            </Element>
         </>
     )
 }

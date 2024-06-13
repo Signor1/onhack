@@ -36,12 +36,12 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <aside className="w-full md:px-6 px-3 flex justify-between items-end absolute bottom-6 left-0">
+            <aside className="w-full md:px-6 px-3 flex justify-between items-end absolute md:bottom-6 bottom-3 left-0">
                 <button className="flex gap-1 animate-pulse items-center bg-[#67CA2F]/20 text-greenBg rounded-full px-4 py-2">
                     <span className="w-6 h-6 bg-liteGreen flex justify-center items-center rounded-full">
                         <IoIosArrowRoundUp className="text-greenBg text-lg font-semibold" />
                     </span>
-                    <span className="text-liteGreen text-xs">Next Up - About OnHack</span>
+                    <span className="text-liteGreen md:text-xs text-[0.65rem]">Next Up - About OnHack</span>
                 </button>
 
                 <button className="flex flex-col items-center gap-1">

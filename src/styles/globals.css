@@ -75,3 +75,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+.prizeBg {
+  background-image: url('../../public/prizeBg.png');
+  background-size: cover;
+  background-position: center;
+}
