@@ -6,6 +6,8 @@ import About from "../about"
 import MobileNav from "../shared/MobileNav"
 import Banner from "../banner/Banner"
 import Prize from "../prize"
+import Invitation from "../invite"
+import Sponsors from "../sponsors"
 
 const Index = () => {
     return (
@@ -22,6 +24,8 @@ const Index = () => {
             <Element name="prize">
                 <Prize />
             </Element>
+            <Invitation />
+            <Sponsors />
         </>
     )
 }

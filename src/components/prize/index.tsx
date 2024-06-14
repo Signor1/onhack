@@ -17,7 +17,7 @@ const Prize = () => {
                         <span>ONCHAIN <br /> CHAMPION</span>
                         <Image src={vector} alt="vector" className='absolute right-0 -top-7' width={40} height={40} quality={100} />
                     </div>
-                    <span className="text-[#67CA2F] text-sm">Prize</span>
+                    <span className="text-[#67CA2F] bg-[#67CA2F]/10 px-4 py-1.5 rounded-lg text-sm">Prize</span>
                     <div className='flex justify-center gap-3 items-center'>
                         <Image src={usdc} alt="prize" width={50} height={50} quality={100} />
                         <span className='text-[#67CA2F] text-5xl font-bold'>50K</span>
@@ -45,8 +45,8 @@ export default Prize
 const SmallCard = ({ reverse }: { reverse: boolean }) => {
     return (
         <div className={`flex flex-row gap-2 bg-[#1B0F1E] py-4 px-3 rounded-3xl ${reverse && "flex-row-reverse px-6 hidden md:flex"}`}>
-            <div className='w-[30%] flex flex-col justify-center'>
-                <span className="text-[#67CA2F] text-center text-xs">Prize</span>
+            <div className='w-[30%] flex flex-col justify-center items-center'>
+                <span className="text-[#67CA2F] bg-[#67CA2F]/10 px-3 py-1.5 rounded-lg text-center text-xs">Prize</span>
                 <div className='flex justify-center gap-1 items-center'>
                     <Image src={usdc} alt="prize" width={30} height={30} quality={100} />
                     <span className='text-[#67CA2F] text-3xl font-bold'>50K</span>
