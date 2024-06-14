@@ -8,6 +8,7 @@ import Banner from "../banner/Banner"
 import Prize from "../prize"
 import Invitation from "../invite"
 import Sponsors from "../sponsors"
+import Footer from "../shared/Footer"
 
 const Index = () => {
     return (
@@ -26,6 +27,7 @@ const Index = () => {
             </Element>
             <Invitation />
             <Sponsors />
+            <Footer />
         </>
     )
 }

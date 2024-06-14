@@ -19,19 +19,19 @@ const HeroSection = () => {
                 <Link href={`/`} className=" lg:hidden overflow-hidden relative bg-[#ffebd80d] text-milkyBg px-16 rounded-lg py-2.5 z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-milkyBg hover:before:w-full hover:text-greenBg">Sponsor</Link>
 
                 {/* shapes */}
-                <div className="absolute top-4 md:left-20 -left-5 lg:w-[93px] lg:h-[79px]">
+                <div className="absolute top-4 lg:left-20 md:left-24 -left-5 lg:w-[93px] lg:h-[79px]">
                     <Image src={shape1} alt="shape" className="h-full w-full" width={93} height={79} quality={100} priority />
                 </div>
-                <div className="absolute md:bottom-6 md:left-10 -left-8 bottom-2 lg:w-[131px] lg:h-[131px]">
+                <div className="absolute lg:bottom-6 md:bottom-24 lg:left-10 md:left-24 -left-8 bottom-14 lg:w-[131px] lg:h-[131px]">
                     <Image src={shape2} alt="shape" className="h-full w-full" width={131} height={131} quality={100} priority />
                 </div>
-                <div className="absolute md:-top-12 md:right-24 top-0 -right-8 lg:w-[131px] lg:h-[131px]">
+                <div className="absolute lg:-top-12 md:-top-8 lg:right-24 md:right-24 top-0 -right-8 lg:w-[131px] lg:h-[131px]">
                     <Image src={shape3} alt="shape" className="h-full w-full" width={131} height={131} quality={100} priority />
                 </div>
-                <div className="absolute md:-top-14 -top-7 left-[45%] lg:w-[71px] lg:h-[72px]">
+                <div className="absolute lg:-top-14 md:-top-7 -top-7 left-[45%] lg:w-[71px] lg:h-[72px]">
                     <Image src={shape4} alt="shape" className="h-full w-full" width={71} height={72} quality={100} priority />
                 </div>
-                <div className="absolute md:bottom-6 md:right-8 -bottom-2 -right-8 lg:w-[167px] lg:h-[167px]">
+                <div className="absolute lg:bottom-6 md:bottom-20 lg:right-8 md:right-20 bottom-10 -right-8 lg:w-[167px] lg:h-[167px]">
                     <Image src={shape5} alt="shape" className="h-full w-full" width={167} height={167} quality={100} priority />
                 </div>
             </div>

@@ -22,8 +22,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`fixed top-0 inset-x-0 z-40 w-full py-3 ${navBarColor && "bg-greenBg backdrop-blur-3xl"}`}>
-            <MaxWrapper className="h-full md:pt-6 pb-3 pt-3 md:px-10 px-4 flex justify-between items-center">
+        <header className={`fixed top-0 inset-x-0 z-40 w-full md:px-4 px-1 py-1`}>
+            <MaxWrapper className={`h-full md:pt-6 pb-3 pt-3 md:px-10 px-4 flex justify-between items-center  ${navBarColor && "bg-greenBg backdrop-blur-3xl md:rounded-3xl rounded-lg"}`}>
                 <Logo />
 
                 {/* Links  */}
