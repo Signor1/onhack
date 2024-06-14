@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Sora({
   subsets: ["latin"],
