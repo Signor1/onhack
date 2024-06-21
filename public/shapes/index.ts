@@ -1,8 +1,8 @@
-import shape1 from "./Polygon.png";
-import shape2 from "./Subtract.png";
-import shape3 from "./Subtract2.png";
-import shape4 from "./Vector.png";
-import shape5 from "./circle.png";
-import shape6 from "./dotcircle.png";
+import blueshape from "./Polygon.png";
+import greenshape from "./Subtract.png";
+import yellowshape from "./Subtract2.png";
+import purpleshape from "./Vector.png";
+import orangeshape from "./circle.png";
+import brownshape from "./dotcircle.png";
 
-export { shape1, shape2, shape3, shape4, shape5, shape6 };
+export { blueshape, greenshape, yellowshape, purpleshape, orangeshape, brownshape };

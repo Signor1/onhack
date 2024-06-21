@@ -1,7 +1,6 @@
 'use client'
 import { Element } from "react-scroll"
 import HeroSection from "../hero/HeroSection"
-import Header from "../shared/Header"
 import About from "../about"
 import MobileNav from "../shared/MobileNav"
 import Banner from "../banner/Banner"
@@ -13,7 +12,6 @@ import Footer from "../shared/Footer"
 const Index = () => {
     return (
         <>
-            <Header />
             <MobileNav />
             <Element name="home">
                 <HeroSection />

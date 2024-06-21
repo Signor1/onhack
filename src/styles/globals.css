@@ -81,3 +81,9 @@
   background-size: cover;
   background-position: center;
 }
+
+.heroGradient {
+  background-image:
+    radial-gradient(500px circle at 50% -5%,
+      #ffe74bb5 0%, 0.025%, #0e231c 80% 80%);
+}

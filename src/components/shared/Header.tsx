@@ -3,8 +3,8 @@ import Link from "next/link";
 import Logo from "./Logo"
 import MaxWrapper from "./MaxWrapper"
 import { Link as Spy } from 'react-scroll';
-import MobileNav from "./MobileNav";
 import { useEffect, useState } from "react";
+
 
 const Header = () => {
 
@@ -22,23 +22,23 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`fixed top-0 inset-x-0 z-40 w-full md:px-4 px-1 py-1`}>
-            <MaxWrapper className={`h-full md:pt-6 pb-3 pt-3 md:px-10 px-4 flex justify-between items-center  ${navBarColor && "bg-greenBg backdrop-blur-3xl md:rounded-3xl rounded-lg"}`}>
+        <header className={`lg:fixed inset-x-0 z-40 w-full lg:px-[45px] md:px-[16px] ${navBarColor ? "lg:w-[1096px] lg:left-1/2 lg:-translate-x-1/2 lg:top-0" : "md:top-[32px] top-0"}`}>
+            <MaxWrapper className={`h-[80px] lg:mt-[36px] md:mt-[16px] mt-0 md:px-[36px] px-[16px] flex justify-between items-center  ${navBarColor && "lg:bg-[#E7E9E8]/[5%] lg:backdrop-blur-2xl lg:border-[1px] lg:border-[#87918B]/[4%] lg:rounded-[17px]"}`}>
                 <Logo />
 
                 {/* Links  */}
-                <div className="md:flex lg:ml-24 hidden bg-liteBlack/70 p-2 rounded-md items-center justify-center gap-2">
+                <div className="lg:flex lg:ml-[200px] hidden bg-liteBlack/70 p-[8px] rounded-[14px] items-center justify-center gap-2">
                     {
                         NavBarLinks.map((navlink, index) => (
-                            <Spy key={index} to={navlink.url} smooth={true} spy={true} activeClass="bg-[#ffebd80d]" duration={500} className={`font-light text-milkyBg py-2 px-3 rounded-md text-sm cursor-pointer ${navlink.url}`}>{navlink.name}</Spy>
+                            <Spy key={index} to={navlink.url} smooth={true} spy={true} activeClass="bg-[#FFEBD8]/[4%] border-[1px] border-[#FFEBD8]/[4%]" offset={-200} duration={500} className={`font-light text-milkyBg p-[10px] rounded-[8px] text-sm cursor-pointer ${navlink.url}`}>{navlink.name}</Spy>
                         ))
                     }
                 </div>
 
-                <div className="flex gap-2 items-center">
-                    <div className="flex bg-liteBlack/70 p-2 rounded-md items-center justify-center gap-2">
-                        <Link href={'/'} className="font-light hidden lg:inline-block text-milkyBg py-2 px-3 rounded-md text-sm cursor-pointer bg-[#ffebd80d]">Sponsor</Link>
-                        <Link href={'/'} className="bg-milkyBg py-2 px-3 text-sm rounded-md text-greenBg">Apply Now</Link>
+                <div className="flex items-center">
+                    <div className="flex lg:bg-liteBlack/70 lg:p-[8px] rounded-[14px] items-center justify-center gap-[8px]">
+                        <Link href={'/'} className=" hidden text-milkyBg px-[42px] h-[40px] rounded-[8px] text-sm cursor-pointer bg-[#FFEBD8]/[4%] lg:flex justify-center items-center border-[1px] border-[#FFEBD8]/[4%]">Sponsor</Link>
+                        <Link href={'/'} className="bg-milkyBg md:h-[40px] h-[36px] md:px-[42px] px-[24px] text-sm rounded-[8px] text-greenBg flex justify-center items-center border-[1px] border-[#FFEBD8]/[4%]">Apply Now</Link>
                     </div>
 
                 </div>
