@@ -87,3 +87,15 @@
     radial-gradient(500px circle at 50% -5%,
       #ffe74bb5 0%, 0.025%, #0e231c 80% 80%);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

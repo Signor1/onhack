@@ -11,7 +11,7 @@ const Prize = () => {
                 <Image src={bgPattern} className="w-full h-full object-cover" alt="pattern" width={1376} height={931} quality={100} />
             </div>
             <main className='absolute top-0 left-0 items-center justify-center bg-[#C568DD]/70 flex flex-col h-full w-full md:px-[96px] px-5'>
-                <div className='w-full md:h-[710px] overflow-y-auto h-[445px]'>
+                <div className='w-full md:h-[710px] overflow-y-auto no-scrollbar h-[445px]'>
 
                     <div className='w-full md:flex hidden flex-col mb-7'>
                         <h1 className='text-[#1B0F1E] text-4xl font-extrabold'>Prizes</h1>
@@ -42,7 +42,7 @@ const Prize = () => {
                         </div>
 
                         <div className="w-full md:h-[101px] h-[109px] bg-[#1B0F1E] flex justify-center items-center rounded-[20px] md:rounded-[40px]">
-                            <p className="text-milkyBg md:text-sm text-xs text-center tracking-wide">
+                            <p className="text-milkyBg md:text-sm text-xs text-center tracking-wide p-2 md:p-0">
                                 <span className='text-[#FFE64B] tracking-wider font-bold'>PERKS FOR EVERY PARTICPANTS AND PROJECTS::</span> Mentorship, networking, and exposure to industry leaders </p>
                         </div>
 
