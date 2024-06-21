@@ -8,6 +8,21 @@ export const containerVariants = {
   },
 };
 
+export const zoomOutEffect = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 120,
+      duration: 4,
+      delay: 1,
+    },
+  },
+};
+
 export const textAnimateDown = {
   hidden: {
     y: "-100vh",

@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io"
 import { HiOutlineArrowNarrowDown } from "react-icons/hi"
 import Header from "../shared/Header"
 import { motion } from "framer-motion";
-import { blueshapeAnime, containerVariants, textAnimateDown, textAnimateLeft, textAnimateRight, textAnimateUp } from "../shared/Animations"
+import { containerVariants, zoomOutEffect } from "../shared/Animations"
 
 
 const HeroSection = () => {
@@ -16,16 +16,15 @@ const HeroSection = () => {
             animate="visible"
         >
             <Header />
-            <div className="flex flex-col items-center md:gap-2 gap-1 relative mt-10 lg:mt-0">
-                <motion.h3 className="text-[0.6rem] font-medium lg:text-base bg-liteGreen lg:px-[20px] px-[9px] lg:rounded-[31px] rounded-[14px] lg:h-[45px] h-[21px] flex justify-center items-center text-greenBg"
-                    variants={textAnimateDown}
-                >3- Weeks Hack Builders Fellowship Program</motion.h3>
+            <motion.div className="flex flex-col items-center md:gap-2 gap-1 relative mt-10 lg:mt-0" initial='hidden' animate="visible" variants={zoomOutEffect}>
+                <h3 className="text-[0.6rem] font-medium lg:text-base bg-liteGreen lg:px-[20px] px-[9px] lg:rounded-[31px] rounded-[14px] lg:h-[45px] h-[21px] flex justify-center items-center text-greenBg"
+                >3- Weeks Hack Builders Fellowship Program</h3>
                 <div className="flex flex-col items-center">
-                    <motion.h2 className="lg:text-6xl md:text-4xl text-2xl text-milkyBg md:font-extrabold font-bold" variants={textAnimateLeft}>ONCHAIN SUMMER</motion.h2>
-                    <motion.h1 className="lg:text-8xl md:text-6xl text-4xl text-milkyBg md:font-extrabold font-bold" variants={textAnimateRight}>BUILDATH<motion.span className="inline-block lg:w-20 lg:h-20 md:w-12 md:h-12 w-7 h-7 relative before:absolute before:w-1/2 before:bg-greenBg md:before:h-1 before:h-[2px] before:right-0 before:-translate-y-1/2 before:top-1/2 bg-liteBrown rounded-full before:rounded-s-full" animate={{ rotate: 360 }}
-                        transition={{ repeat: Infinity, duration: 20, ease: "linear", stiffness: 50 }}></motion.span>N</motion.h1>
+                    <h2 className="lg:text-6xl md:text-4xl text-2xl text-milkyBg md:font-extrabold font-bold">ONCHAIN SUMMER</h2>
+                    <h1 className="lg:text-8xl md:text-6xl text-4xl text-milkyBg md:font-extrabold font-bold" >BUILDATH<motion.span className="inline-block lg:w-20 lg:h-20 md:w-12 md:h-12 w-7 h-7 relative before:absolute before:w-1/2 before:bg-greenBg md:before:h-1 before:h-[2px] before:right-0 before:-translate-y-1/2 before:top-1/2 bg-liteBrown rounded-full before:rounded-s-full" animate={{ rotate: 360 }}
+                        transition={{ repeat: Infinity, duration: 20, ease: "linear", stiffness: 50 }}></motion.span>N</h1>
                 </div>
-                <motion.p className="text-milkyBg lg:w-[60%] md:w-[60%] w-[85%] text-center text-xs md:text-base font-light md:font-normal" variants={textAnimateUp}>Join us for an exciting opportunity to network, learn, and create innovative onchain apps.</motion.p>
+                <p className="text-milkyBg lg:w-[60%] md:w-[60%] w-[85%] text-center text-xs md:text-base font-light md:font-normal">Join us for an exciting opportunity to network, learn, and create innovative onchain apps.</p>
 
                 <Link href={`/`} className="text-greenBg mt-3 overflow-hidden relative bg-milkyBg md:w-[261px] md:h-[48px] w-[188px] h-[36px] flex justify-center items-center rounded-[8px] font-medium z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-liteBrown hover:before:w-full text-sm md:text-base">Apply Now</Link>
 
@@ -47,7 +46,7 @@ const HeroSection = () => {
                 <motion.div className="absolute lg:bottom-2 md:bottom-20 lg:-right-32 md:right-20 bottom-10 right-6 lg:w-[167px] lg:h-[167px] w-[40px]" animate={{ scale: [0.5, 1] }} transition={{ delay: 3, repeat: Infinity, repeatType: "mirror", duration: 4 }}>
                     <Image src={orangeshape} alt="shape" className="h-full w-full" width={167} height={167} quality={100} priority />
                 </motion.div>
-            </div>
+            </motion.div>
 
             <aside className="w-full md:px-[36px] flex md:flex-row flex-col justify-between md:items-end items-center gap-3 absolute bottom-[32px] left-0">
                 <button className="flex gap-1 items-center bg-[#67CA2F]/[6%] text-greenBg rounded-[57px] md:pl-[16px] md:pr-[16px] md:py-[14px] pl-[12px] pr-[6px] py-[6px]">
