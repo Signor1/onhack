@@ -44,60 +44,37 @@ const About = () => {
     }, []);
 
     return (
-        // <section className="w-full md:my-[32px] my-[16px] lg:h-[760px] md:h-[660px] h-[579px] flex flex-row md:rounded-[36px] rounded-[24px] items-center justify-center bg-greenBg/[10%] relative overflow-hidden md:pl-[48px] pl-[16px] md:pr-[36px] pr-[16px]">
-        //     {
-        //         weeks.map((item, index) => (
-        //             <main key={index} className={`w-full flex-row items-center justify-between flex`}>
-        //                 <div className="flex flex-col justify-center md:gap-6 gap-4 md:items-start items-center md:w-[522px] md:h-[438px] w-[302px] h-[186px]">
-        //                     <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-2">
-        //                         {
-        //                             buttonCaptions.map((filter, index) => (
-        //                                 <button key={index} className={`font-light  py-2 px-3 rounded-md text-sm cursor-pointer bg-milkyBg text-greenBg`}>{filter}</button>
-        //                             ))
-        //                         }
-        //                     </div>
-        //                     <h2 className="text-black lg:text-5xl  text-4xl text-center md:text-start font-extrabold">{item.title}</h2>
-        //                     <p className="text-center md:text-start text-greenBg">{item.description}</p>
-        //                     <Link href={`/`} className="text-milkyBg mt-3 overflow-hidden relative bg-black px-12 rounded-[8px] text-nowrap md:rounded-[8px] md:w-[261px] w-[168px] md:h-[48px] h-[34px] flex justify-center items-center z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-greenBg hover:before:w-full">View Full Breakdown</Link>
-        //                 </div>
-
-        //                 <div className="lg:h-[664px] md:h-[564px] h-[232px] md:w-[561px] w-[309px] flex flex-col justify-center items-end">
-        //                     <ImageWrapper image={item.image} shapeone={item.firstshape} shapetwo={item.lastshape} />
-        //                 </div>
-        //             </main>
-        //         ))
-        //     }
-
-        // </section>
         <section className="w-full overflow-hidden md:my-[32px] my-[16px] bg-greenBg/[10%] md:rounded-[36px] rounded-[24px]">
             <div ref={triggerRef} className="overflow-hidden">
-                <div ref={sectionRef} className="lg:h-[760px] md:h-[660px] h-[579px] w-[300%] flex flex-row relative">
+                <div ref={sectionRef} className=" w-[300%] flex flex-row relative ">
                     {/* one */}
-                    <main className={`w-[100%] h-full overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] flex-row items-center justify-between flex`}>
+                    <main className={`w-[100%] pt-24 md:pt-0 lg:h-[760px] md:h-[660px] h-[579px] overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] md:flex-row flex-col items-center md:justify-between justify-center flex gap-12 md:gap-0`}>
                         <div className="flex flex-col justify-center md:gap-6 gap-4 md:items-start items-center md:w-[522px] md:h-[438px] w-[302px] h-[186px]">
-                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-2">
-                                <button className={`font-light  py-2 px-3 rounded-md text-sm cursor-pointer bg-milkyBg text-greenBg`}>Week 1</button>
-
+                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-8  ">
+                                <button className={`font-light z-20 flex justify-center items-center w-[70px] h-[34px] rounded-[32px] text-sm  bg-[#FFEBD8]/[4%] border border-[#FFEBD8] text-milkyBg relative before:absolute before:w-[30px] before:h-[2px] before:bg-milkyBg/[4%] before:top-1/2 before:-translate-y-1/2 before:-right-[30px] before:rounded-e-md after:absolute after:w-[15px] after:h-[2px] after:bg-milkyBg after:top-1/2 after:-translate-y-1/2 after:-right-[15px]`}>Week 1</button>
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-milkyBg bg-[#FFEBD8]/[4%] border border-[#FFEBD8]/[4%]`}>2</button>
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-milkyBg bg-[#FFEBD8]/[4%] border border-[#FFEBD8]/[4%]`}>3</button>
                             </div>
-                            <h2 className="text-black lg:text-5xl  text-4xl text-center md:text-start font-extrabold">Kick-off, Team Formation, and Ideation</h2>
-                            <p className="text-center md:text-start text-greenBg">The program begins with a kick-off event where participants form teams and brainstorm ideas. Mentors will be available to guide and inspire the ideation process.</p>
+                            <h2 className="text-black lg:text-5xl text-[1.55rem] text-center md:text-start md:font-extrabold font-bold leading-[2rem] md:leading-4">Kick-off, Team Formation, and Ideation</h2>
+                            <p className="text-center text-sm md:text-base md:text-start text-greenBg">The program begins with a kick-off event where participants form teams and brainstorm ideas. Mentors will be available to guide and inspire the ideation process.</p>
                             <Link href={`/`} className="text-milkyBg mt-3 overflow-hidden relative bg-black px-12 rounded-[8px] text-nowrap md:rounded-[8px] md:w-[261px] w-[168px] md:h-[48px] h-[34px] flex justify-center items-center z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-greenBg hover:before:w-full">View Full Breakdown</Link>
                         </div>
 
-                        <div className="lg:h-[664px] md:h-[564px] h-[232px] md:w-[561px] w-[309px] flex flex-col justify-center items-end">
+                        <div className="lg:h-[664px] md:h-[564px] h-[232px] md:w-[561px] w-[309px] flex flex-col justify-center md:items-end">
                             <ImageWrapper image={image1} shapeone={orangeshape} shapetwo={greenshape} />
                         </div>
                     </main>
 
                     {/* two */}
-                    <main className={`w-[100%] h-full overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] flex-row items-center justify-between flex`}>
+                    <main className={`w-[100%] pt-24 md:pt-0 lg:h-[760px] md:h-[660px] h-[579px] overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] md:flex-row flex-col items-center md:justify-between justify-center flex gap-12 md:gap-0`}>
                         <div className="flex flex-col justify-center md:gap-6 gap-4 md:items-start items-center md:w-[522px] md:h-[438px] w-[302px] h-[186px]">
-                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-2">
-                                <button className={`font-light  py-2 px-3 rounded-md text-sm cursor-pointer bg-milkyBg text-greenBg`}>Week 2</button>
-
+                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-8  ">
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-greenBg bg-[#FFEBD8] relative before:absolute before:w-[32px] before:h-[2px] before:bg-milkyBg before:top-1/2 before:-translate-y-1/2 before:-right-[32px] before:rounded-e-md`}>1</button>
+                                <button className={`font-light z-20 flex justify-center items-center w-[70px] h-[34px] rounded-[32px] text-sm  bg-[#FFEBD8]/[4%] border border-[#FFEBD8] text-milkyBg relative before:absolute before:w-[30px] before:h-[2px] before:bg-milkyBg/[4%] before:top-1/2 before:-translate-y-1/2 before:-right-[30px] before:rounded-e-md after:absolute after:w-[15px] after:h-[2px] after:bg-milkyBg after:top-1/2 after:-translate-y-1/2 after:-right-[15px]`}>Week 2</button>
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-milkyBg bg-[#FFEBD8]/[4%] border border-[#FFEBD8]/[4%]`}>3</button>
                             </div>
-                            <h2 className="text-black lg:text-5xl  text-4xl text-center md:text-start font-extrabold">Build MVP & Get feedback from Community</h2>
-                            <p className="text-center md:text-start text-greenBg">Teams will work on developing their Minimum Viable Product (MVP) and receive valuable feedback from the community. This iterative process will help refine and improve the projects.</p>
+                            <h2 className="text-black lg:text-5xl text-[1.55rem] text-center leading-[2rem] md:leading-4 md:text-start md:font-extrabold font-bold">Build MVP & Get feedback from Community</h2>
+                            <p className="text-center text-sm md:text-base md:text-start text-greenBg">Teams will work on developing their Minimum Viable Product (MVP) and receive valuable feedback from the community. This iterative process will help refine and improve the projects.</p>
                             <Link href={`/`} className="text-milkyBg mt-3 overflow-hidden relative bg-black px-12 rounded-[8px] text-nowrap md:rounded-[8px] md:w-[261px] w-[168px] md:h-[48px] h-[34px] flex justify-center items-center z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-greenBg hover:before:w-full">View Full Breakdown</Link>
                         </div>
 
@@ -107,14 +84,16 @@ const About = () => {
                     </main>
 
                     {/* three */}
-                    <main className={`w-[100%] h-full overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] flex-row items-center justify-between flex`}>
+                    <main className={`w-[100%] pt-24 md:pt-0 lg:h-[760px] md:h-[660px] h-[579px] overflow-hidden  md:pl-[72px] pl-[16px] md:pr-[36px] pr-[16px] md:flex-row flex-col items-center md:justify-between justify-center flex gap-12 md:gap-0`}>
                         <div className="flex flex-col justify-center md:gap-6 gap-4 md:items-start items-center md:w-[522px] md:h-[438px] w-[302px] h-[186px]">
-                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-2">
-                                <button className={`font-light  py-2 px-3 rounded-md text-sm cursor-pointer bg-milkyBg text-greenBg`}>Week 3</button>
+                            <div className="flex bg-liteBlack/70 p-[6px] rounded-[100px] items-center justify-center gap-8  ">
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-greenBg bg-[#FFEBD8] relative before:absolute before:w-[32px] before:h-[2px] before:bg-milkyBg before:top-1/2 before:-translate-y-1/2 before:-right-[32px] before:rounded-e-md`}>1</button>
+                                <button className={`font-light flex justify-center items-center w-[30px] h-[30px] rounded-full text-sm  text-greenBg bg-[#FFEBD8] relative before:absolute before:w-[32px] before:h-[2px] before:bg-milkyBg before:top-1/2 before:-translate-y-1/2 before:-right-[32px] before:rounded-e-md`}>2</button>
+                                <button className={`font-light z-20 flex justify-center items-center w-[70px] h-[34px] rounded-[32px] text-sm  bg-[#FFEBD8]/[4%] border border-[#FFEBD8] text-milkyBg`}>Week 3</button>
 
                             </div>
-                            <h2 className="text-black lg:text-5xl  text-4xl text-center md:text-start font-extrabold">Polish, Launch & Demo Day</h2>
-                            <p className="text-center md:text-start text-greenBg">In the final week, teams will focus on polishing their projects, preparing for launch, and showcasing their work on Demo Day. This is a chance to present your solutions to a wider audience.</p>
+                            <h2 className="text-black lg:text-5xl text-[1.55rem] text-center md:text-start md:font-extrabold font-bold leading-[2rem] md:leading-4">Polish, Launch & Demo Day</h2>
+                            <p className="text-center text-sm md:text-base md:text-start text-greenBg">In the final week, teams will focus on polishing their projects, preparing for launch, and showcasing their work on Demo Day. This is a chance to present your solutions to a wider audience.</p>
                             <Link href={`/`} className="text-milkyBg mt-3 overflow-hidden relative bg-black px-12 rounded-[8px] text-nowrap md:rounded-[8px] md:w-[261px] w-[168px] md:h-[48px] h-[34px] flex justify-center items-center z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-greenBg hover:before:w-full">View Full Breakdown</Link>
                         </div>
 
