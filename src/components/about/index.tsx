@@ -14,8 +14,6 @@ const About = () => {
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
-    const buttonCaptions = ['Week 1', 'Week 2', 'Week 3'];
-
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
