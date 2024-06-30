@@ -28,7 +28,7 @@ const Header = ({ navBarTrans }: { navBarTrans: boolean }) => {
                     <div className="flex items-center">
                         <div className="flex lg:bg-liteBlack/70 lg:p-[8px] rounded-[14px] items-center justify-center gap-[8px]">
                             <Link href={'/'} className=" hidden text-milkyBg px-[42px] h-[40px] rounded-[8px] text-sm cursor-pointer bg-[#FFEBD8]/[4%] lg:flex justify-center items-center border-[1px] border-[#FFEBD8]/[4%]">Sponsor</Link>
-                            <Link href={'/'} className="bg-milkyBg md:h-[40px] h-[36px] md:px-[42px] px-[24px] text-sm rounded-[8px] text-greenBg flex justify-center items-center border-[1px] border-[#FFEBD8]/[4%]">Join Waitlist</Link>
+                            <Link href={'https://tally.so/r/3jMdX4'} target="_blank" rel="noopener" className="bg-milkyBg md:h-[40px] h-[36px] md:px-[42px] px-[24px] text-sm rounded-[8px] text-greenBg flex justify-center items-center border-[1px] border-[#FFEBD8]/[4%]">Join Waitlist</Link>
                         </div>
 
                     </div>

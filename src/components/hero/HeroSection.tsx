@@ -40,7 +40,7 @@ const HeroSection = () => {
                 </div>
                 <p className="text-milkyBg lg:w-[60%] md:w-[60%] w-[85%] text-center text-xs md:text-base font-light md:font-normal">Join us for an exciting opportunity to network, learn, and create innovative onchain apps.</p>
 
-                <Link href={`/`} className="text-greenBg mt-3 overflow-hidden relative bg-milkyBg md:w-[261px] md:h-[48px] w-[188px] h-[36px] flex justify-center items-center rounded-[8px] font-medium z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-liteBrown hover:before:w-full text-sm md:text-base">Join Waitlist</Link>
+                <Link href={'https://tally.so/r/3jMdX4'} target="_blank" rel="noopener" className="text-greenBg mt-3 overflow-hidden relative bg-milkyBg md:w-[261px] md:h-[48px] w-[188px] h-[36px] flex justify-center items-center rounded-[8px] font-medium z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-liteBrown hover:before:w-full text-sm md:text-base">Join Waitlist</Link>
 
                 <Link href={`/`} className="lg:hidden overflow-hidden relative bg-[#ffebd80d] text-milkyBg md:w-[261px] md:h-[48px] w-[188px] h-[36px] rounded-[8px] flex justify-center items-center z-10 before:absolute before:top-0 before:left-0 before:-z-10 before:w-0 before:h-full before:transition-all before:duration-300 before:bg-milkyBg hover:before:w-full hover:text-greenBg text-sm md:text-base mt-[8px]">Sponsor</Link>
 
